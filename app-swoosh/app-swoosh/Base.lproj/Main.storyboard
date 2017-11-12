@@ -131,9 +131,13 @@
                                     <constraint firstAttribute="height" constant="50" id="qss-Gw-f76"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Womens">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onWomemTapped:" destination="qvc-36-rFc" eventType="touchUpInside" id="gTI-AQ-4qf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t41-CH-4de" customClass="ButtonBorder" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="348.5" width="343" height="50"/>
@@ -142,9 +146,13 @@
                                     <constraint firstAttribute="height" constant="50" id="mFU-RO-J8E"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Co-ed">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onCoedTapped:" destination="qvc-36-rFc" eventType="touchUpInside" id="5Ka-oN-XU5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6L-4p-zZS" customClass="ButtonBorder" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="174.5" width="343" height="50"/>
@@ -153,11 +161,15 @@
                                     <constraint firstAttribute="height" constant="50" id="mJL-vd-HQS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Mens">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onMenTapped:" destination="qvc-36-rFc" eventType="touchUpInside" id="HCr-WB-GPa"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CL7-Jd-Gxb" customClass="ButtonBorder" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CL7-Jd-Gxb" customClass="ButtonBorder" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="597" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60329555450000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -219,6 +231,10 @@
                         <viewLayoutGuide key="safeArea" id="IwY-rs-h74"/>
                     </view>
                     <connections>
+                        <outlet property="CoedBtn" destination="t41-CH-4de" id="qNr-rl-PBF"/>
+                        <outlet property="MensBtn" destination="h6L-4p-zZS" id="bhg-Kn-GsV"/>
+                        <outlet property="WomensBtn" destination="dqq-Qj-TSq" id="LZe-mZ-Ocs"/>
+                        <outlet property="onNextBtn" destination="CL7-Jd-Gxb" id="5hh-j3-KDl"/>
                         <segue destination="HjD-yS-fr1" kind="show" identifier="SkillVCsegue" id="bfk-rV-bHj"/>
                     </connections>
                 </viewController>
