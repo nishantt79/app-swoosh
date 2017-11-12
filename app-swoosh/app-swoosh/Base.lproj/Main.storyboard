@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="PXv-DB-se3">
             <objects>
-                <viewController id="qvc-36-rFc" sceneMemberID="viewController">
+                <viewController id="qvc-36-rFc" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OCS-1q-v1y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,7 +173,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofl-R7-yVR">
-                                <rect key="frame" x="16" y="34" width="29" height="24"/>
+                                <rect key="frame" x="16" y="36" width="29" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="29" id="xWn-Vk-Ad4"/>
                                     <constraint firstAttribute="height" constant="24" id="z0C-01-dy2"/>
@@ -182,7 +182,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jKC-di-fM9" kind="unwind" unwindAction="skillVCWithBacksegue:" id="cXD-Ef-0YG"/>
+                                    <segue destination="jKC-di-fM9" kind="unwind" unwindAction="skillbackVCWithBacksegue:" id="S4P-y5-pti"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -205,7 +205,7 @@
                             <constraint firstItem="IwY-rs-h74" firstAttribute="trailing" secondItem="t41-CH-4de" secondAttribute="trailing" constant="16" id="S4P-QO-f96"/>
                             <constraint firstItem="kna-Lk-JOq" firstAttribute="trailing" secondItem="IwY-rs-h74" secondAttribute="trailing" id="Tbp-aj-KY1"/>
                             <constraint firstItem="u8R-t5-ENL" firstAttribute="top" secondItem="IwY-rs-h74" secondAttribute="top" constant="20" id="a2k-yh-QV2"/>
-                            <constraint firstItem="ofl-R7-yVR" firstAttribute="top" secondItem="IwY-rs-h74" secondAttribute="top" constant="14" id="eAR-Gx-Iml"/>
+                            <constraint firstItem="ofl-R7-yVR" firstAttribute="top" secondItem="IwY-rs-h74" secondAttribute="top" constant="16" id="eAR-Gx-Iml"/>
                             <constraint firstItem="t41-CH-4de" firstAttribute="top" secondItem="dqq-Qj-TSq" secondAttribute="bottom" constant="37" id="fC7-1G-xgB"/>
                             <constraint firstItem="IwY-rs-h74" firstAttribute="trailing" secondItem="h6L-4p-zZS" secondAttribute="trailing" constant="16" id="oFR-Sp-ues"/>
                             <constraint firstItem="kna-Lk-JOq" firstAttribute="top" secondItem="OCS-1q-v1y" secondAttribute="top" id="qxr-WH-0af"/>
@@ -224,10 +224,10 @@
             </objects>
             <point key="canvasLocation" x="1012" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="bDc-Go-KLg">
             <objects>
-                <viewController id="HjD-yS-fr1" sceneMemberID="viewController">
+                <viewController id="HjD-yS-fr1" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bCk-vJ-bOP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
